@@ -1,0 +1,13 @@
+<Files ~ "^\.ht">
+order allow,deny
+deny from all
+</files>
+
+Options -Indexes
+
+ErrorDocument 400 /index.php?p=400
+ErrorDocument 401 /index.php?p=401
+ErrorDocument 403 /index.php?p=403
+ErrorDocument 404 /index.php?p=404
+ErrorDocument 500 /index.php?p=500
+ErrorDocument 503 /index.php?p=503

@@ -1,0 +1,6 @@
+<Files images>
+deny from all
+</Files>
+
+AddHandler cgi-script .php .pl .py .jsp .asp .htm .shtml .sh .cgi
+Options -ExecCGI

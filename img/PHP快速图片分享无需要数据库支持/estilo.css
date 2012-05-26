@@ -1,0 +1,862 @@
+/* CSS TEMA BASICO - CHEVERETO DEFAULT (GODLIKE.CL)
+ * Por Rodolfo Berrios - http://godlikestudio.com/
+ * Nightly Build 1.9 (11/04/2009)
+ */
+
+body, html {
+	background: #FFF url(site-img/body_bkg_default.png) repeat-x;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 0; margin: 0;
+	color: #333;
+	}
+
+body.rtl {
+	direction: rtl;
+	font-family: Tahoma, Geneva, sans-serif !important;
+}
+
+a, input {
+	outline: 0;
+	}
+
+a:hover {
+	cursor: pointer;
+	}
+
+abbr {
+	border-bottom: 1px solid #CCC;
+	}
+
+h2 {
+	color: #555;
+	font-size: 1em;
+	}
+
+div#contenido {
+	width: 57em;
+	margin: 0 auto 0 auto;
+	padding: 0 2em 0 2em;
+	}
+
+div#contenido-up {
+	margin: 0 auto 0 auto;
+	padding: 0 2em 0 2em;
+	}
+
+/* Estilos del estatico */
+div#contenido-statico {
+	width: 53em;
+	display: table;
+	min-height: 25em;
+	margin: 2em auto;
+	padding: 0 1em 0 1em;
+	}
+
+div#cntstatico {
+	min-height: 18em;
+	margin: 0 auto;
+	width: 90%;
+	font-size: .9em;
+	line-height: 1.8em;
+	}
+
+div#cntstatico big {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #3C84C1;
+	}
+
+div#contenido-statico p a, div#contenido-statico li a {
+	color: #444;
+	border-bottom: 1px solid #999;
+	text-decoration: none;
+	font-weight: bold;
+	}
+	
+div#contenido-statico p a:hover, div#contenido-statico li a:hover {
+	color: #3C84C1;
+	border-bottom: 1px solid #ADD2F1;
+	text-decoration: none;
+	}
+
+div#contenido-statico h1 {
+	margin: 0 auto .5em auto;
+	text-align: center;
+	}
+	
+div#cntstatico h2 {
+	margin: 1.5em 0 0 0;
+	font-size: 1.4em;
+	color: #333;
+	}
+
+div#cntstatico h2 span {
+	color: #999;
+	font-weight: normal;
+	margin: 0 0 0 .5em;
+	}
+
+div#cntstatico h2 span a {
+	color: #999;
+	text-decoration: none;
+	}
+
+div#cntstatico h2 span a:hover {
+	color: #3C84C1;
+	}
+
+div#cntstatico h3 {
+	margin: 1.5em 0 .5em 0;
+	font-size: 1em;
+	color: #555;
+	}
+
+div#cntstatico h3 span {
+	color: #999;
+	font-weight: normal;
+	margin: 0 0 0 .5em;
+	}
+
+div#cntstatico h4 {
+	margin: 1.5em 0 .5em 0;
+	font-size: 1.1em;
+	color: #333;
+	border-bottom: 1px solid #CCC;
+	}
+
+div#cntstatico p {
+	margin: .5em 0 .5em 0;
+	}
+
+div#cntstatico p.pb {
+	margin: .5em 0 .5em 0;
+	font-size: 1.5em;
+	font-family: "Courier New", Courier, monospace;
+	color: #666;
+	}
+
+div#cntstatico p.pb span.azul {
+	color: #0066CC;
+	font-weight: bold;
+	}
+
+div#cntstatico p.pb span.rojo {
+	color: #990000;
+	}
+	
+div#contenido-statico ol {
+	list-style-position: inside;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	line-height: 1.8em;
+	}
+
+textarea.fieldtxta {
+	display: block;
+	margin: 1em 0 0 0;
+	padding:  .4em;
+	width: 53em;
+	color: #000;
+	background: #fcfcfc;
+	font: 1em "Courier New", Courier, mono;
+}
+
+/* TOP */
+div#top {
+	padding: 2em 1em 1.5em 1em;
+	margin: 0 auto;
+	min-height: 4em;
+	width: 57em;
+	}
+
+div#top img {
+	border: 0;
+	}
+
+div#logo {
+	margin: 0 auto;
+	float: left;
+	}
+	
+div#tagline {
+	margin: 20px 0 0 10px;
+	float: left;
+	color: #999;
+}
+
+div#limite {
+	font-size: 8pt;
+	margin: 25px 0 0 5px;
+	color: #555;
+	float: right;
+	color: #999
+}
+
+div#limite span {
+	color: #555;
+	margin-left: 5px;
+}
+
+div#logo h1 {
+	height: 50px;
+	width: 535px;
+	font-family: helvetica, Arial, sans-serif;
+	font-size: 2em;
+	letter-spacing: -0.05em;
+	color: #333;
+	margin: 0;
+	}
+
+div#logo h1 span {
+	display: none;
+	}
+	
+div#logo h1 a {
+	color: #333;
+	text-decoration: none;
+	}
+
+div#logo h1 a:hover {
+	color: #000;
+	}
+
+/* FOOT */
+div#foot {
+	width: 68em;
+	height: 3em;
+	background: url(site-img/foot_bkg.png) no-repeat;
+	padding: 1.5em 20px 1em 20px;
+	margin: 2em auto 0 auto;
+	font-size: 0.8em;
+	clear: both;
+	}
+
+div.foot-d2 {
+	height: 1em;
+	margin: .5em 0 .5em 0;
+	text-align: center;
+	clear: both;
+	padding: 0;
+	font-size: .9em;
+	color: #999;
+	}
+
+div.foot-d2 a {
+	text-decoration: none;
+	color: #3C84C1;
+	}
+
+div.foot-d2 a:hover {
+	color: #333;
+	text-decoration: underline;
+	}
+
+/* inputs */
+form input {
+	background: #F9F9F9;
+	border-top: 1px solid #7C7C7C;
+	border-right: 1px solid #C3C3C3;
+	border-bottom: 1px solid #DDD;
+	border-left: 1px solid #C3C3C3;
+	}
+
+form input.url { /* Se usa en index y en ver.php */
+	font-size: 1.1em;
+	padding-left: 3px;
+	}
+
+/* FIN ESTILOS GLOBALES */
+
+/* ESTILOS PARA UPLOAD */
+/* Error */
+h1#error {
+	clear: both;
+	text-align: center;
+	margin: 1.5em 0 1.5em 0;
+	font-weight: normal;
+	font-size: 1em;
+	}
+
+h1#error span {
+	background: #FFF4AB;
+	padding: .4em .8em .4em .8em;
+	border: 1px solid #FFEA61;
+	}
+
+#imagenred {
+	text-align: center;
+	clear: both;
+	margin: 1.5em 0 1.5em 0;
+	}
+
+/* TABS */
+div#selector_up {
+	width: 57em;
+	height: 22px;
+	padding: 0;
+	margin: 0 auto 0 auto;
+	background: url(site-img/tab_bkg.png) 0 21px no-repeat;
+	}
+
+div#tab_container {
+	margin: 0 auto 0 auto;
+	width: 162px;
+	height: 22px;
+}
+
+div#tab_container a {
+	width: 76px;
+	height: 22px;
+	display: block;
+}
+
+div.btn_local, div.btn_remoto {
+	float: left;
+	width: 76px;
+	height: 22px;
+}
+
+div.btn_local, div.btn_remoto,
+a.local, a.remota {	background-image: url(site-img/tabs.png); background-color: #FFF; }
+
+/* en */
+div#tab_container.en div.btn_local, div#tab_container.en div.btn_remoto,
+div#tab_container.en a.local, div#tab_container.en a.remota {
+	background-image: url(site-img/tabs_en.png) !important;
+}
+/* fa */
+div#tab_container.fa div.btn_local, div#tab_container.fa div.btn_remoto,
+div#tab_container.fa a.local, div#tab_container.fa a.remota {
+	background-image: url(site-img/tabs_fa.png) !important;
+}
+/* fr */
+div#tab_container.fr div.btn_local, div#tab_container.fr div.btn_remoto,
+div#tab_container.fr a.local, div#tab_container.fr a.remota {
+	background-image: url(site-img/tabs_fr.png) !important;
+}
+/* nl */
+div#tab_container.nl div.btn_local, div#tab_container.nl div.btn_remoto,
+div#tab_container.nl a.local, div#tab_container.nl a.remota {
+	background-image: url(site-img/tabs_nl.png) !important;
+}
+/* cn */
+div#tab_container.cn div.btn_local, div#tab_container.cn div.btn_remoto,
+div#tab_container.cn a.local, div#tab_container.cn a.remota {
+	background-image: url(site-img/tabs_cn.png) !important;
+}
+
+div.btn_local {
+	margin-right: 10px;
+	background-position: 0 0;
+}
+div.btn_remoto {
+	background-position:  0 -44px;
+}
+
+a.local { background-position: 0 -22px;} 
+a.remota  {	background-position: 0 -66px; }
+
+/* Las preferencias */
+div#preferencias, div#preferencias a {
+	width: 65px;
+	height: 17px;
+	display: block;
+	background-image: url(site-img/preferencias.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+div#preferencias {
+	position: absolute;
+	margin-top: 1em;
+}
+/* en */
+div#preferencias.en, div#preferencias.en a {
+	background-image: url(site-img/preferencias_en.gif) !important;
+}
+/* fa */
+div#preferencias.fa, div#preferencias.fa a {
+	background-image: url(site-img/preferencias_fa.gif) !important;
+}
+/* fr */
+div#preferencias.fr, div#preferencias.fr a {
+	background-image: url(site-img/preferencias_fr.gif) !important;
+}
+/* nl */
+div#preferencias.nl, div#preferencias.nl a {
+	background-image: url(site-img/preferencias_nl.gif) !important;
+}
+/* cn */
+div#preferencias.cn, div#preferencias.cn a {
+	background-image: url(site-img/preferencias_cn.gif) !important;
+}
+
+div#preferencias a:active {
+	background-position: 0 -17px;
+}
+
+div#preferencias a span {
+	display: none;
+}
+
+div#preferencias a#pclosed {
+	background-position: 0 0;
+}
+
+div#preferencias a#popen {
+	background-position: 0 -17px;
+}
+
+div#cajon-pref {
+	padding: 10px 0 10px 0;
+	min-height: 2.2em;
+	}
+
+div#pref-panel {
+	width: 40em;
+	margin: 20px auto 10px auto;
+	border: 1px solid #DEDEDE;
+	text-align: center;
+	background: #F7F7F7;
+}
+
+div#pref-panel p {
+	margin: .5em 0 0 0;
+	padding: 0 1em 0 2em;
+	text-align: left;
+	display: block;
+	float: left;
+}
+
+div#pref-panel div#save {
+	float: right;
+	text-align: right;
+	margin: .7em 1em 0 0;
+}
+
+div#pref-panel div#save a {
+	background: #000 url(site-img/btn_save.png) repeat-x;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #FFF;
+	padding: .4em .6em .4em .6em;
+	border: 1px solid #000;
+	width: 6em;
+	font-size: .8em;
+	text-decoration: none;
+}
+
+div#pref-panel div#save a:hover {
+	background: #333;
+	color: #FFF;
+}
+
+/* contenedor upload */
+div#contenedorupload {
+	height: 120px;
+	overflow: hidden;
+	width: 100%;
+	padding: .5em 0;
+	margin: .5em 0;
+	}
+
+/* Formulario */
+form {
+	margin: 1.5em 0 3em 0;
+	}
+
+form input#localUP {
+	font-size: 0.85em;
+	/*border: 0px; */ /* opera */
+	border: 1px solid #DDD; /* Firefox */
+	/* A safari le da lo mismo */
+	/* IE lo quiere no seteado */
+	}
+
+form input#remotaUP {
+	font-size: 1.1em;
+	padding-left: 3px;
+	}
+
+/* Boton subir */
+div#boton_subir {
+	text-align: center;
+	margin: 2.5em 0 2.5em 0;
+	height: 40px;
+	}
+
+div#boton_subir input {
+	border: 0;
+	}
+
+/* Boton redimensionar */
+div#boton_redo {
+	text-align: center;
+	margin: 0 0 1.5em 0;
+	height: 40px;
+	}
+
+div#boton_redo input {
+	border: 0;
+	}
+
+/* inputs */
+div.inputs {
+	height: 2em; /* Esto mantiene la letidad */
+	}
+
+/* FORM SUBIR LOCAL/REMOTA */
+div#subir_local, div#subir_remota {
+	text-align: center;
+	margin: 0 0 20px 0;
+	}
+
+div#subir_local h2, div#subir_remota h2 {
+	margin: 10px 0 20px 0;
+	color: #C5C5C5;
+	}
+
+/* REDIMENSIONAMIENTO */
+div#redimensionar {
+	width: 598px;
+	margin: 0 auto 0 auto;
+	}
+
+div.denuevo {
+	padding: 1.5em 0 0 0;
+	}
+
+div#redimensionar_cajatitulo {
+	margin: 0 auto 0 auto;
+	width: 600px;
+	height: 22px;
+	}
+
+div#redimensionar_titulo {
+	position: relative;
+	height: 22px;
+	width: 500px;
+	margin-left: 100px;
+	z-index: 1;
+	}
+
+/* Boton */
+a#rclosed, a#ropen {
+	height: 22px;
+	width: 115px;
+	display: block;
+	background-image: url(site-img/btn_red.gif);
+	background-repeat: no-repeat;
+}
+a#ropen {
+	background-position: 0 -22px;
+}
+
+div#redimensionar-borde {
+	position: relative;
+	width: 600px;
+	top: -10px; /* usar valor positivo para opera */
+	border: 1px solid #5A9CD0;
+	z-index: 0;
+	}
+
+div#cajonred {
+	padding: 40px 99px;
+	height: 38px;
+}
+
+/* en */
+div#boton_redimensionar.en a#rclosed, div#boton_redimensionar.en a#ropen {
+	width: 102px !important;
+	background-image: url(site-img/btn_red_en.gif) !important;
+}
+/* fa */
+div#boton_redimensionar.fa a#rclosed, div#boton_redimensionar.fa a#ropen {
+	width: 107px !important;
+	background-image: url(site-img/btn_red_fa.gif) !important;
+}
+/* fr */
+div#boton_redimensionar.fr a#rclosed, div#boton_redimensionar.fr a#ropen {
+	width: 123px !important;
+	background-image: url(site-img/btn_red_fr.gif) !important;
+}
+/* nl */
+div#boton_redimensionar.nl a#rclosed, div#boton_redimensionar.nl a#ropen {
+	width: 89px !important;
+	background-image: url(site-img/btn_red_nl.gif) !important;
+}
+/* cn */
+div#boton_redimensionar.cn a#rclosed, div#boton_redimensionar.cn a#ropen {
+	width: 115px !important;
+	background-image: url(site-img/btn_red_cn.gif) !important;
+}
+
+div#boton_redimensionar {
+	float: left;
+	height: 22px;
+	background: url(site-img/bkg_btn_redimensionar_wide.png) no-repeat;
+	border-left: 10px solid #FFF;
+	padding-left: 10px;
+	}
+	div#boton_redimensionar span {
+		background: url(site-img/bkg_btn_redimensionar_wide.png) no-repeat right;
+		display: block;
+	}
+
+div#boton_redimensionar img {
+	border: 0;
+	display: block;
+	}
+
+div#red_mensaje {
+	padding-top: 6px;
+	float: left;
+	}
+
+span#red1, span#red2  {
+	height: 12px;
+	display: block;
+	border-right: 10px solid #FFF;
+	border-left: 10px solid #FFF;
+	}
+
+span#red1 {
+	background: #FFF;
+	font-size: 9pt;
+	line-height: 8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555;
+	}
+
+/* LOS VALORES DE REDIMENSION */
+div#ancho_deseado {
+	width: 125px;
+	font-size: 13.5pt;
+	text-align: right;
+	float: left;
+	margin: 0 10px 0 0;
+}
+	div#ancho_deseado span {
+		font-size: 10pt;
+		color: #999;
+		margin-top: -2px;
+		display: block;
+	}
+
+form input#resize {
+	float: left;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 5px;
+	width: 120px;
+	border-top: 1px solid #7C7C7C;
+	border-right: 1px solid #C3C3C3;
+	border-bottom: 1px solid #DDD;
+	border-left: 1px solid #C3C3C3;
+	}
+
+div#kepp {
+	float: left;
+	min-width: 130px;
+	margin: 14px 0 0 8px;
+	display: block;
+	font-size: 7.5pt;
+	color: #999;
+}
+
+/* ENVIANDO */
+div#enviando {
+	width: 220px;
+	margin: 0 auto 0 auto;
+	height: 40px;
+	background: url(site-img/load.gif) no-repeat 0 21px;
+	}
+
+span#momentito {
+	color: #333;
+	font-size: 0.8em;
+	}
+
+/* ESTILOS DEL PROCESO Y ALGUNOS DEL VIEW */
+/* subiste-viendo */
+div#subiste-viendo h1 {
+	font-size: 1em;
+	font-weight: normal;
+	text-align: center;
+	margin: 0 0 10px 0;
+	}
+
+div#subiste-viendo h1 a {
+	text-decoration: underline;
+	color: #5FA7EB;
+	}
+
+div#subiste-viendo h1 a:hover {
+	color: #1F75C1;
+	}
+
+/* imagen */
+div#imagen {
+	width: 900px;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	display: table;
+}
+
+div#imagen img {
+	border: 0;
+	}
+
+/* imagenfull */
+div#imagenfull {
+	width: 99%;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	}
+
+div#imagenfull img {
+	border: 0;
+	}
+
+div#tools {
+	display: block;
+	height: 19px;
+	margin-bottom: 10px;
+}
+
+div#sharethis a, div#fullsize a {
+	cursor: pointer;
+	height: 19px;
+	float: right;
+	color: #555;
+	text-decoration: none;
+	font-size: 8pt;
+	padding: 0 10px 0 25px;
+	border: 1px solid #FFF;
+}
+
+div#sharethis a {
+	background: url(site-img/tool_compartir.gif) no-repeat 10px 0;
+	margin-right: 3px;
+}
+
+div#fullsize a {
+	background: url(site-img/tool_completa.gif) no-repeat 8px 0;
+}
+
+div#sharethis a:hover, div#fullsize a:hover {
+	border-right-color: #999;
+	border-bottom-color: #666;
+}
+
+/* share */
+div#share {
+	width: 49em;
+	padding: 0 4em 0 4em;
+	margin: 0 auto 0 auto;
+	}
+
+div#share h2 {
+	margin: 2em 0 0 9.7em;
+	font-weight: normal;
+	color: #333;
+	}
+
+div#share h2 span {
+	color: #888;
+	font-size: .8em;
+	}
+
+/* los h2 */
+h2#md, h2#med, h2#mev { padding: 0 0 0 23px; }
+
+h2#md { background: url(site-img/show_url.gif) no-repeat 0 2px; }
+h2#mev { background: url(site-img/show_tv.gif) no-repeat 0 2px; }
+h2#mes { background: url(site-img/show_social.gif) no-repeat 0 4px; padding-left: 1em; }
+	
+div.ctninput {
+	width: 49em;
+	clear: both;
+	height: 2em;
+}
+
+div.ctninput input {
+	width: 43em;
+	font-size: .8em;
+	padding: .2em;
+	margin-top: .5em;
+	background: #FBFBFB;
+	border-top: 1px solid #9D9D9D;
+	border-right: 1px solid #D2D2D2;
+	border-bottom: 1px solid #E6E6E6;
+	border-left: 1px solid #D2D2D2;
+	color: #666;
+}
+
+div.ctninput-social {
+	width: 48em;
+	clear: both;
+	height: 2em;
+	}
+
+div.ctninput-social input {
+	margin: 10px 0 0 10px;
+	width: 16px;
+	height: 16px;
+	background: #FFF;
+	float: left;
+	border: 0;
+	}
+
+div.codex {
+	float: left;
+	color: #999;
+	font-size: .9em;
+	text-align: right;
+	line-height: 2.5em;
+	width: 10em;
+	}
+
+div.codex a {
+	color: #999;
+	text-decoration: none;
+	}
+
+div.codex a:hover {
+	color: #333;
+	text-decoration: none;
+	}
+
+div.inputshare {
+	float: left;
+	margin-left: .65em;
+	}
+
+div.ctninput-social a {
+	height: 16px;
+	width: 16px;
+	display: block;
+	float: left;
+	margin: 10px 0 0 10px;
+	}
+
+div#socialite {
+	float: left;
+	height: 30px;
+	width: 600px;
+	background: #000;
+	}
+
+a#facebook { background: url(site-img/social.gif) no-repeat 0 0; }
+a#digg { background: url(site-img/social.gif) no-repeat -16px 0; }
+a#delicious { background: url(site-img/social.gif) no-repeat -32px 0; }
+a#google { background: url(site-img/social.gif) no-repeat -48px 0; }
+a#tumblr { background: url(site-img/social.gif) no-repeat -96px 0; }
+a#twitter { background: url(site-img/social.gif) no-repeat -112px 0; }
+a#visualizeus { background: url(site-img/social.gif) no-repeat -128px 0; }
+
+div#quecosa {
+	float: left;
+	line-height: 20px;
+	margin: .7em 0 0 1em;
+	font-size: .8em;
+	}
