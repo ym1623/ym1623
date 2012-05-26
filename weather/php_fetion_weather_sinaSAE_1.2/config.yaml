@@ -1,0 +1,7 @@
+name: ibtf
+version: 3
+cron:
+- description: cron test
+  url: weather.php?pwd=bitefu
+  schedule: every day of month 07:40
+  timezone: Beijing
