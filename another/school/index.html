@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>学校列表</title>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/autocomplete.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<link href="./css/common.css" type="text/css"  rel="stylesheet"  />
+
+</head>
+<body>
+<div id="search">
+	<form action="${home}/search.php" method="post" id="find">
+   	<table>
+		<tr>
+			<td>
+				<input type="text" name="school" id="school" value="请选择学校"/>
+				<input type="hidden" name="schoolid" id="schoolid" value="" />  
+			</td>
+		</tr>
+	</table>
+   	</form>
+    <div id="ps"><div id="pstitle">请选择学校</div>
+    	<div id="searchSchool">
+	    	搜索：<input type="text" name="schoolName" id="schoolName" />
+	    	<span id="type">
+	    		<a href="javascript:void(0);" class="4">大学</a>
+	    		<a href="javascript:void(0);" class="5">高中</a>
+	    		<a href="javascript:void(0);" class="7">技校</a>
+	    		<a href="javascript:void(0);" class="6">初中</a>
+	    	</span>
+	    	<input type="hidden" name="type" value="4"/>
+    	</div>
+    	<div id="province"></div>
+    	<div id="city"></div>
+    	<div id="area"></div>
+    	<ul id="schools"></ul>
+   	 	<div id="closePS"><li id="closePs">关闭</li></div>
+    </div>
+</div>
+</body>
+</html>

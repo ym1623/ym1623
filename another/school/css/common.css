@@ -1,0 +1,35 @@
+body{ margin: 0px auto; padding: 0px;font: 12px "宋体";width: 985px;background: white;}
+form,table { margin:0; padding:0; }
+img { padding: 0; border: 0 }
+li{list-style-type: none;}
+a { text-decoration:none;}
+#search{clear: both;height: 41px;width: 985px;color: white;font-size: 15px}
+#find{width: 620px;height: 30px;padding-left: 110px;float: left;padding-bottom: 8px;}
+#find table tr td{ padding-top: 5px;width:50px;}
+#school { width: 130px; color: #6B6B68;}
+#search table td { padding-left: 10px; }
+#search select,#keyword  { border: 1px inset #ccc; color: #6B6B68; }
+#search select { width: 150px; }
+#ps {display:none; width: 680px; height: auto;position: absolute; font-size: 12px; background: white; border: 3px solid #878787}
+#ps a {color: #005EAC}
+#pstitle {height: 25px; font-size: 14px;  background: #3777BC; color: white; font-weight: bold; padding-top: 5px; padding-left: 10px;}
+#searchSchool {margin:5px; color: #3777BC; font-size: 14px; font-weight: bold;}
+#province { margin: 10px 5px; height: 40px;  border: 1px solid #c3c3c3; padding-top:5px;}
+#province li {float:left; width: 40px; text-align: center;height:18px;line-height:18px;}
+#province li a:hover { text-decoration: underline;}
+#closePS {height: 25px;width:100%;}
+#closePS li {background: #3777BC; float:right; font-size:14px; font-weight:bold; padding-left: 10px; width:40px; height: 20px; padding-top:3px; margin-bottom:5px; margin-right: 5px; cursor:pointer;}
+#schools {padding:0;margin:0;margin: 10px 5px; margin-top: 10px; overflow: hidden; overflow: auto;}
+#schools li {float:left; width: 190px; margin: 3px 0 3px 10px;}
+.ac_results {padding: 0px;border: 1px solid black;background-color: white;overflow: hidden;z-index: 99999;}
+.ac_results ul {width: 100%;list-style-position: outside;list-style: none;padding: 0;margin: 0;}
+.ac_results li {margin: 0px;padding: 2px 5px;cursor: default;display: block;font: menu;font-size: 12px;line-height: 16px;overflow: hidden;}
+.ac_odd {background-color: #eee;}
+.ac_over {background-color: #0A246A;color: white;}
+#city ,#area{height:auto;overflow:auto;}
+#city li {float:left; width: 40px; text-align: center;height:18px;line-height:18px;}
+#city li a:hover { text-decoration: underline;}
+
+#area li {float:left; width: 40px; text-align: center;height:18px;line-height:18px;}
+#area li a:hover { text-decoration: underline;}
+.curr{background:#E9F2FD;}
