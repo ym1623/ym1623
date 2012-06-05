@@ -1,0 +1,104 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh_cn" lang="zh_cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>多文件上传组件</title>
+</head>
+<body bgcolor="#ffffff" style="text-align:center;">
+<!--影片中使用的 URL-->
+<!--影片中使用的文本-->
+<!-- saved from url=(0013)about:internet -->
+<script language="javascript">
+function challs_flash_update(){ //Flash 初始化函数
+	var a={};
+	//定义变量为Object 类型
+	
+	a.FormName = "Filedata";
+	//设置Form表单的文本域的Name属性
+	
+	a.url="update.php"; 
+	//设置服务器接收代码文件
+	
+	a.parameter="bs=tyi&id=50"; 
+	//设置提交参数，以GET形式提交
+	
+	a.typefile=["Images (*.gif,*.png,*.jpg)","*.gif;*.png;*.jpg"];
+	//设置可以上传文件 数组类型
+	//"Images (*.gif,*.png,*.jpg)"为用户选择要上载的文件时可以看到的描述字符串,
+	//"*.gif;*.png;*.jpg"为文件扩展名列表，其中列出用户选择要上载的文件时可以看到的 Windows 文件格式，以分号相隔
+	
+	a.UpSize=0;
+	//可限制传输文件总容量，0或负数为不限制，单位MB
+	
+	a.fileNum=0;
+	//可限制待传文件的数量，0或负数为不限制
+	
+	a.size=10;
+	//上传单个文件限制大小，单位MB，可以填写小数类型
+	
+	a.FormID=['select','select2'];
+	//设置每次上传时将注册了ID的表单数据以POST形式发送到服务器
+	//需要设置的FORM表单中checkbox,text,textarea,radio,select项目的ID值
+	//参数为数组类型，注意使用此参数必须有 challs_flash_FormData() 函数支持
+	
+	a.CompleteClose=true;
+	//设置为true时，上传完成的条目，将也可以取消删除条目，这样参数 UpSize 将失效, 默认为false
+	
+	return a ;
+	//返回Object
+}
+
+function challs_flash_onComplete(a){ //每次上传完成调用的函数，并传入一个Object类型变量，包括刚上传文件的大小，名称，上传所用时间,文件类型
+	var name=a.fileName; //获取上传文件名
+	var size=a.fileSize; //获取上传文件大小，单位字节
+	var time=a.updateTime; //获取上传所用时间 单位毫秒
+	var type=a.fileType; //获取文件类型，在 Windows 上，此属性是文件扩展名。 在 Macintosh 上，此属性是由四个字符组成的文件类型
+	document.getElementById('show').innerHTML+='<a href="'+name+'" target="_blank">'+name+' --- '+size+'字节 ----文件类型：'+type+'--- 用时 '+(time/1000)+'秒</a><br/><br/>';//'
+}
+
+function challs_flash_onCompleteData(a){ //获取服务器反馈信息事件
+	document.getElementById('show').innerHTML+='<font color="#ff0000">服务器端反馈信息：</font><br />'+a+'<br />';	
+}
+function challs_flash_onStart(a){ //开始一个新的文件上传时事件,并传入一个Object类型变量，包括刚上传文件的大小，名称，类型
+	var name=a.fileName; //获取上传文件名
+	var size=a.fileSize; //获取上传文件大小，单位字节
+	var type=a.fileType; //获取文件类型，在 Windows 上，此属性是文件扩展名。 在 Macintosh 上，此属性是由四个字符组成的文件类型
+	document.getElementById('show').innerHTML+=name+'开始上传！<br />';
+}
+
+function challs_flash_onCompleteAll(){ //上传文件列表全部上传完毕事件
+	document.getElementById('show').innerHTML+='<font color="#ff0000">所有文件上传完毕！</font><br />';
+	//window.location.href='http://www.access2008.cn/update'; //传输完成后，跳转页面
+}
+
+function challs_flash_FormData(a){// 使用FormID参数时必要函数
+	try{
+		return document.getElementById(a).value;
+	}catch(e){
+		return '';
+	}
+}
+</script>
+	  这个选择框的数据将以POST形式和图片一起传送到服务器
+	    <select id="select">
+	    <option value="老虎">老虎</option>
+	    <option value="兔子">兔子</option>
+	    <option value="骏马">骏马</option>
+      </select>
+      <select id="select2">
+	    <option value="石头">石头</option>
+	    <option value="剪子">剪子</option>
+	    <option value="布">布</option>
+      </select>
+	  <br>
+	  <br>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="408" height="323" id="update_" align="middle">
+<param name="allowFullScreen" value="false" />
+    <param name="allowScriptAccess" value="always" />
+	<param name="movie" value="update.swf" />
+    <param name="quality" value="high" />
+    <param name="bgcolor" value="#ffffff" />
+    <embed src="update.swf" quality="high" bgcolor="#ffffff" width="408" height="323" name="update_" align="middle" allowScriptAccess="always" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	</object>
+<div id="show" style="margin-top:20px; width:500px; text-align:left;"></div>
+</body>
+</html>
