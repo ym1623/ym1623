@@ -1,0 +1,29 @@
+/* CSS Document */
+*{
+margin:0px auto;}
+th{
+font-size:14px;
+color:#0066FF;
+font-weight:bold;}
+td{
+font-size:12px;}
+
+a:link{
+font-size:14px;
+
+color:#3366FF;
+text-decoration:none;}
+a:visited{
+font-size:14px;
+
+color:#3366FF;
+text-decoration:none;}
+
+a:hover{
+	font-size:14px;
+	color:#FF0000;
+	text-decoration:none;
+	position: relative;
+	top: 1px;
+	right: 1px;
+}

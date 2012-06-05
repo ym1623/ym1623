@@ -1,0 +1,204 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language=javascript src="dialog.js"></script>
+
+<script language=javascript>
+document.write ("<link href='../language/" + AvailableLangs["Active"] + ".css' type='text/css' rel='stylesheet'>");
+document.write ("<link href='dialog.css' type='text/css' rel='stylesheet'>");
+
+
+var sType = URLParams['type'] ;
+var sTitle = "";
+
+switch(sType){
+case "image":
+	sTitle = lang["DlgBrowseImage"];
+	break;
+case "flash":
+	sTitle = lang["DlgBrowseFlash"];
+	break;
+case "media":
+	sTitle = lang["DlgBrowseMedia"];
+	break;
+default:
+	sTitle = lang["DlgBrowseFile"]
+	break;
+}
+
+document.write("<title>" + lang["DlgBrowse"] + "(" + sTitle + ")</title>");
+if(config.BaseHref!=""){
+	document.write("<base href='" + document.location.protocol + "//" + document.location.host + config.BaseHref + "'>");
+}
+
+
+function doRowClick(el){
+	if(el["isdir"]){
+		doChangeDir(el["path"]);
+	} else {
+		document.getElementById("d_url")["value"]=el.getAttribute("url") ;
+		var obj = tabList.getElementsByTagName("TR");
+		for (var i=0; i<obj.length; i++){
+			if (obj[i].className=="rowSelected"){
+				obj[i].className = "rowOut";
+			}
+		}
+		el.className = "rowSelected";
+		doPreview();
+	} ;
+}
+
+function doChangeDir(s_Dir){
+	myIframe.location.replace("../"+config.ServerExt+"/browse."+config.ServerExt+"?type="+sType+"&dir="+s_Dir+"&style=" + config.StyleName);
+}
+
+function doPreview(){
+	divPreview["innerHTML"]="" ;
+	var s_Url=document.getElementById("d_url")["value"];
+	if(s_Url==""){
+		return ;
+	} ;
+	var s_Ext=s_Url.substring(s_Url.lastIndexOf(".")).toLowerCase();
+	switch(s_Ext){
+	case ".jpeg":
+	case ".jpg":
+	case ".gif":
+	case ".png":
+	case ".bmp":
+		divPreview["innerHTML"]="<IMG src='"+s_Url+"'>" ;
+		break ;
+	} ;
+}
+
+function doRowOver(el){
+	if (el.className!="rowSelected"){
+		el.className="rowOver" ;
+	}
+}
+
+function doRowOut(el){
+	if (el.className!="rowSelected"){
+		el.className="rowOut" ;
+	}
+}
+
+function setDirList(html, path){
+	var s_TabHead = "<table id='tabList' border=0 cellspacing=1 cellpadding=1 width='100%'><tr align=center style='BACKGROUND-COLOR: #f0f0f0'><td width='16'>&nbsp;</td><td width='140'>"+lang["DlgBrowseName"]+"</td><td width='90'>"+lang["DlgBrowseSize"]+"</td></tr>";
+	d_folderpath["innerHTML"] = path;
+	divDir.innerHTML = s_TabHead + html;
+}
+
+
+function doZoomIn(){
+	if(divPreview["style"]["zoom"]!=0){
+		divPreview["style"]["zoom"]*=1.2 ;
+	} else {
+		divPreview["style"]["zoom"]=1.2 ;
+	} ;
+}  ;
+
+function doZoomOut(){
+	if(divPreview["style"]["zoom"]!=0){
+		divPreview["style"]["zoom"]*=0.8 ;
+	} else {
+		divPreview["style"]["zoom"]=0.8 ;
+	} ;
+}  ;
+
+function doBestFit(){
+	var el=GetPreviewedImage();
+	if(!el){return ;} ;
+	var w=250;
+	var h=250;
+	divPreview["style"]["zoom"]=1/Math.max(el["width"]/w,el["height"]/h) ;
+}  ;
+
+function doActualSize(){
+	try{
+		var img= new Image();
+		img["src"]=document.getElementById("d_url")["value"] ;
+		if(img["width"]){
+			document.getElementById("Width")["value"]=img["width"] ;
+		} ;
+		if(img["height"]){
+			document.getElementById("Height")["value"]=img["height"] ;
+		} ;
+	}
+	catch(er){} ;
+	divPreview["style"]["zoom"]=1 ;
+}  ;
+
+function GetPreviewedImage(){
+	var el=divPreview.getElementsByTagName("IMG");
+	if(el&&(el["length"]>0)){
+		return el.item(0);
+	} else {
+		return null;
+	} ;
+}  ;
+
+function ok(){
+	returnValue = d_url.value;
+	self.close();
+}
+
+function InitDocument(){
+	AvailableLangs.TranslatePage(document);
+
+	adjustDialog();
+	doChangeDir("");
+}
+
+</SCRIPT>
+
+<style>
+.rowOver {background:#eeeeee;CURSOR: hand}
+.rowOut {}
+.rowSelected {background:#0000ff}
+.rowSelected td {color:#ffffff}
+</style>
+
+
+</HEAD>
+
+<BODY onload="InitDocument()">
+<table border=0 cellpadding=0 cellspacing=5 id=tabDialogSize><tr><td>
+
+<input type=hidden id=d_url value="">
+<table border=0 cellpadding=0 cellspacing=0 width="100%" align=center>
+<tr><td>
+
+<table border=0 cellpadding=0 cellspacing=0 width="" align=center>
+<tr>
+	<td noWrap width="20px"><IMG src="../sysimage/file/openfolder.gif" border=0></td>
+	<td noWrap width="100%"><SPAN id=d_folderpath>/</SPAN></td>
+	<td noWrap width="130px" align="right"><IMG class=imgButton onmouseover=imgButtonOver(this); onclick=doZoomIn(); alt="Zoom In" src="../sysimage/zoomin.gif"> <IMG class=imgButton onmouseover=imgButtonOver(this); onclick=doZoomOut(); alt="Zoom Out" src="../sysimage/zoomout.gif"> <IMG class=imgButton onmouseover=imgButtonOver(this); onclick=doBestFit(); alt="Best Fit" src="../sysimage/bestfit.gif"> <IMG class=imgButton onmouseover=imgButtonOver(this); onclick=doActualSize(); alt="Actual Size" src="../sysimage/actualsize.gif">&nbsp;</td>
+</tr>
+</table>
+
+</td></tr>
+<tr><td>
+
+<table border=0 cellpadding=0 cellspacing=0 align=center>
+<tr>
+<td vAlign=top noWrap width=250>
+<DIV id=divDir style="BORDER-RIGHT: 1.5pt inset; PADDING-RIGHT: 0px; BORDER-TOP: 1.5pt inset; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; OVERFLOW: auto; BORDER-LEFT: 1.5pt inset; WIDTH: 250px; PADDING-TOP: 0px; BORDER-BOTTOM: 1.5pt inset; HEIGHT: 250px; BACKGROUND-COLOR: white"></DIV>
+</td>
+<td width=10>&nbsp; </td>
+<td vAlign=top>
+	<DIV style="BORDER-RIGHT: 1.5pt inset; PADDING-RIGHT: 0px; BORDER-TOP: 1.5pt inset; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; OVERFLOW: auto; BORDER-LEFT: 1.5pt inset; WIDTH: 250px; PADDING-TOP: 0px; BORDER-BOTTOM: 1.5pt inset; HEIGHT: 250px; BACKGROUND-COLOR: white">
+	<DIV id=divPreview style="BACKGROUND-COLOR: white" width="250px" height="100%">
+	</DIV></DIV>
+</td>
+</tr>
+</table>
+
+</td></tr>
+<tr><td height=5></td></tr>
+<tr><td noWrap align=right><input type=submit value='' id=Ok onclick="ok()" lang=DlgBtnOK>&nbsp;&nbsp;<input type=button value='' onclick="window.close();" lang=DlgBtnCancel></td></tr>
+
+</td></tr></table>
+
+<iframe id=myIframe src="" width="0" height="0" frameborder=0></iframe>
+
+</BODY></HTML>
