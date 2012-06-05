@@ -1,0 +1,230 @@
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.cf_poll{
+	border: 1px solid #bbb;
+	background: #f0f0f0;
+	width: 270px;
+	color: #333333;
+	padding:10px;
+	font-family:Arial;
+	margin: 5px auto;
+}
+#cf_poll a:link,
+#cf_poll a:visited,
+#cf_poll a:active{color: #777;font-weight: bold;text-decoration:underline;font-size:12px;}
+#cf_poll a:hover{color:#FFA400;}
+#cf_poll .question{font-size:14px;font-weight:bold;line-height:18px;margin-bottom: 10px;}
+#cf_poll .button{
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	background:none repeat scroll 0 0 #444;
+	color:#f1f1f1;
+	border:medium none;
+	float:right;
+	font-size:14px;
+	font-weight:700;
+	height:26px;
+	padding:0 0 4px;
+	width:76px;
+	margin:6px 0 0;
+}
+#cf_poll .end_date{font-size:10px;position:relative;text-align:right;top:-22px;}
+#cf_poll .button:hover{background:none repeat scroll 0 0 #FFA400;color:#444;}
+#cf_poll h3{font-size:18px;margin:0;}
+#cf_poll form{background:transparent;border:0;padding:0;}
+#cf_poll label{display:block;font-size:12px;margin:0;padding:7px 0 0;text-align:left;width:200px;}
+#cf_poll label input{font-size:11px;margin:5px 5px 7px;vertical-align:middle;}
+#cf_poll .barempty{height: 12px;background-color:#CCC;width: 270px;}
+#cf_poll .barfull{background-color: #FFA200;border:1px solid #888888;height:10px;width:200px;}
+#cf_poll .percent{color: #666;font-size: 10px;left: 5px;position: relative;top: -1px;}
+#cf_poll .total{float:right;font-size:12px; padding-top: 6px;}
+#cf_poll .footer{display:block;height:15px;margin:15px 0 0;}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.cfpoll1{
+	border: 1px solid #bbb;
+	background: #fbfbfb;
+	width: 200px;
+	color: #333;
+	padding:10px;
+	font-family:Arial;
+	margin: 5px auto;
+	-moz-border-radius:10px 10px 10px 10px;
+}
+#cfpoll1 a:link,
+#cfpoll1 a:visited,
+#cfpoll1 a:active{color: #777;font-weight: bold;text-decoration:underline;font-size:12px;}
+#cfpoll1 a:hover{color:#FFA400;}
+#cfpoll1 input{font-size: 11px;}
+#cfpoll1 .question{font-size:14px;font-weight:bold;line-height:18px;margin-bottom: 5px;}
+#cfpoll1 form{background:transparent;border:0;padding:0 0 16px;}
+#cfpoll1 .button{
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	background:none repeat scroll 0 0 #444;
+	color:#f1f1f1;
+	border:medium none;
+	float:right;
+	font-size:14px;
+	font-weight:700;
+	height:26px;
+	padding:0 0 4px;
+	width:76px;
+	margin:6px 0 0;
+	text-transform:none;
+}
+#cfpoll1 .end_date{
+	background: none repeat scroll 0 0 #444;
+	color: #EEE;
+	font-size: 10px;
+	left: -11px;
+	padding: 0 10px 2px;
+	position: relative;
+	text-align: center;
+	top: -11px;
+	width: 202px;
+}
+#cfpoll1 .button:hover{background:none repeat scroll 0 0 #FFA400;color:#444;}
+#cfpoll1 h3{
+	-moz-border-radius:10px 10px 0 0;
+	-webkit-border-radius:10px 10px 0 0;
+	border-radius:10px 10px 0 0;
+	background-color:#444;
+	color:#F5F5F5;
+	left:-11px;
+	margin:0;
+	padding:5px 5px 0;
+	position:relative;
+	text-align:center;
+	top:-11px;
+	width:212px;
+}
+#cfpoll1 label{
+	display:inline-block;
+	font-size:12px;
+	height:10px;
+	margin:0;
+	text-align:left;
+	padding-left:5px;
+	position:relative;
+	width:180px;
+	z-index:2001;
+}
+#cfpoll1 form label{
+	color: #666666;
+	display: block;
+	font-size: 12px;
+	height: 20px;
+	margin: 0;
+	padding: 9px 0;
+	text-align: left;
+	width: 200px;
+}
+#cfpoll1 label input{font-size: 11px;margin: 7px 0 7px 5px;vertical-align: middle;}
+#cfpoll1 .barempty{
+	background-color:#EEE;
+	display:inline-block;
+	height:20px;
+	position:relative;
+	top:-19px;
+	width:200px;
+}
+#cfpoll1 .barfull{background-color: #FFE9C3;height:20px;width:200px;}
+#cfpoll1 .percent{
+	color: #888888;
+	font-size: 11px;
+	left: 147px;
+	padding-top: 2px;
+	position: relative;
+	text-align: right;
+	width: 50px;
+}
+#cfpoll1 .total{color: #999;float: right;font-size: 11px;padding-top: 7px;}
+#cfpoll1 .footer{display:block;height:15px;margin:0;}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.cf_poll2{
+	border-color: #DDDDDD;
+	border-style: solid none;
+	border-width: 2px 0 1px;
+	color: #555555;
+	font-family: Arial;
+	margin: 5px auto;
+	padding: 0 10px 10px;
+	text-align: center;
+	width: 400px;
+}
+#cf_poll2 a:link,
+#cf_poll2 a:visited,
+#cf_poll2 a:active{color: #777;font-weight: bold;text-decoration:underline;font-size:12px;}
+#cf_poll2 a:hover{color:#FFA400;}
+#cf_poll2 .question{
+	background: none repeat scroll 0 0 #EEEEEE;
+	font-size: 14px;
+	font-weight: bold;
+	left: -10px;
+	line-height: 16px;
+	margin-bottom: 0;
+	padding: 0 10px 5px;
+	position: relative;
+	text-align: left;
+	top: -10px;
+	width: 400px;
+}
+#cf_poll2 .button{
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	background:none repeat scroll 0 0 #444;
+	color:#f1f1f1;
+	border:medium none;
+	float:right;
+	font-size:14px;
+	font-weight:700;
+	height:26px;
+	padding:0 0 4px;
+	width:76px;
+	margin:6px 0 0;
+}
+#cf_poll2 .end_date{font-size:10px;position:relative;text-align:right;top:-22px;}
+#cf_poll2 .button:hover{background:none repeat scroll 0 0 #FFA400;color:#444;}
+#cf_poll2 h3{background: none #EEEEEE;font-size: 18px;height: 28px;left: -10px;margin: 0;padding: 5px 10px 0;position: relative;text-align: left;width: 400px;}
+#cf_poll2 form{background:transparent;border:0;padding:0;}
+#cf_poll2 label{display: inline-block;font-size: 12px;margin: 0;padding: 7px 0 0;text-align: left;min-width: 130px;}
+#cf_poll2 form label{display: block;height: 15px;margin: 0 0 0 23px;}
+#cf_poll2 label input{font-size:11px;margin:5px 5px 7px;vertical-align:middle;}
+#cf_poll2 .barempty{background-color: #E9E9E9;display: inline-block;height: 12px;margin-right: 35px;width: 175px;}
+#cf_poll2 .barfull{background-color: #FFA200;border-right: 1px solid #DB8B00;height: 12px;width: 200px;}
+#cf_poll2 .percent{font-size: 10px;padding-left: 184px;text-align: left;}
+#cf_poll2 .total{float:right;font-size:12px;}
+#cf_poll2 .footer{display: block;height: 15px;margin: 15px 0 0;text-align: left;}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.cfpoll3 {
+	margin: 5px auto;
+	border: 1px solid #bbb;
+	color:#333333;
+	font-family:Verdana;
+	line-height:18px;
+	text-align:center;
+	width:200px;
+}
+#cfpoll3 .button{display:block;margin:5px auto 0;}
+#cfpoll3 h3 {font-size:14px;margin:5px 0 0;text-transform:uppercase;}
+#cfpoll3 .end_date{color:#BBBBBB;font-size:10px;width:200px;}
+#cfpoll3 .question{font-weight:bolder;margin-top:1px;padding:0 0 5px;text-transform:uppercase;}
+#cfpoll3 form {border:0 none;margin:0 auto 5px;padding:5px 0;width:175px;}
+#cfpoll3 .barempty{display:none;}
+#cfpoll3 label{width:175px;display:block;font-size:12px;margin:0 auto 0;padding:2px;text-align:left;}
+#cfpoll3 label input{margin-bottom:2px;vertical-align:bottom;}
+#cfpoll3 .total{font-size:10px;font-weight:700;padding:5px 0;}
+#cfpoll3 .footer a{color:#999999;font-size:12px;text-decoration:none;}
+#cfpoll3 .footer a:hover{color:#333;}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
