@@ -1,0 +1,104 @@
+body { background:#F7F9FD;line-height:140%;font-size: 12px;margin-left: 0px;margin-top: 0px;margin-right: 0px;	margin-bottom: 0px;text-align: center;}
+td{  font-size: 12px}
+.tb1{
+ bgcolor:#ffffff;
+ padding-left:5px;
+ padding-right:5px;
+}
+.txt{ color: #063390;font-size: 12px;BORDER-RIGHT: #dddddd 1px solid; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #dddddd 1px solid;}
+
+.btn{
+background-color:#D3EBFE;BORDER-RIGHT:#666666  1px solid; BORDER-TOP: #dddddd 1px solid; BORDER-LEFT: #dddddd 1px solid; BORDER-BOTTOM:#666666  1px solid;
+}
+select {  font-size: 12px; border-width:1px}
+.inputbg {border:0px; border-bottom:1px solid #8AA6E5; background:transparent}
+
+a:link, a:visited {  color: #063390;text-decoration:none}
+.alink{ font-size:14px;color:#CC0033}
+a:hover { color: #003399; text-decoration:underline }
+
+a.highlight:link, a.highlight:visited { color:red; text-decoration:none }
+a.highlight:hover { color:red; text-decoration:underline }
+
+a.thisclass:link, a.thisclass:visited, a.thisclass:hover { font-weight:bold; text-decoration:none }
+
+a.navlink:link, a.navlink:visited {color: #000000; text-decoration:none}
+a.navlink:hover {color: #003399; text-decoration:none }
+
+.twidth { width: 760px }
+.content, .content td { font-size: 14px;font-family:ËÎÌו,Arial; line-height:140%; margin:5px 20px }
+.content A:visited, .content A:link {color:blue; text-decoration:underline}
+.content A:hover {color:red; }
+.aTitle { font-size: 15px;font-weight:bold; }
+
+.sitehead { height:87px;border:1px solid #6687BA; }
+.sitehead-left {width:0px}
+.sitehead-right {width:0px}
+.footline {height:1px; background:#95AFD6;}
+
+.navbar { height:23px; text-align:center}
+.navbar-left { display:; width:1px; background:#6687BA}
+.navbar-right { display:; width:1px; background:#6687BA}
+
+.navsub { background: #F3F3f3; height:23px;}
+.navsub-left { display:none; width:10px; background:}
+.navsub-right { display:none; width:10px; background:; }
+
+.lframe-t-mid { height:25px; background:url("lframe_t.gif"); text-align:center;}
+.lframe-t-left { display:; width:1px; background:#799AE1;}
+.lframe-t-right { display:; width:1px; background:#799AE1;}
+.lframe-t-text { color:#FFFFFF; font-weight:bold; padding-left:10px;  width:100% }
+.lframe-m-mid { background:#F2F8FF; padding:3px }
+.lframe-m-left { width:1px; background:#799AE1; }
+.lframe-m-right { width:1px; background:#799AE1; }
+.lframe-b-mid { display:; height:13px; border-top:1px solid #799AE1; background:;font-size:1px; }
+.lframe-b-left { display:none; width:18px; background:; }
+.lframe-b-right { display:none;  width:22px; background:; }
+
+.mframe-t-mid { height:25px; background:url("pic/lframe_t.gif"); text-align:left;}
+.mframe-t-left { display:; width:1px; background:#799AE1;}
+.mframe-t-right { display:; width:1px; background:#799AE1;}
+.mframe-t-text { color:#FFFFFF; font-weight:bold; padding-left:10px; width:100% }
+.mframe-x-text { color:#000000; font-weight:bold; padding-left:10px; width:100% }
+.mframe-m-mid { background:#F7FBFF; padding:3px }
+.mframe-m-left { width:1px; background:#799AE1}
+.mframe-m-right { width:1px; background:#799AE1}
+.mframe-b-mid { display:; height:13px; background:;font-size:1px; border-top:1px solid #799AE1}
+.mframe-b-left { display:none; width:18px; background:; }
+.mframe-b-right { display:none;  width:22px; background:; }
+
+.summary-title { background: #EDF1F8;font-weight:bold;height:23px }
+
+.gray { text-decoration:none; color:#0066CC}
+.time { color:red }
+.hit { color:green }
+
+.tdBg { background: #F2F8FF ; line-height:120%}
+.tdbg-dark {background: #EDF1F8; line-height:120%}
+
+
+.quote { margin:10px; margin-left:2em; border:1px solid #CCCCCC; padding:5px;  background: #FFFFFF; font-family:Verdana,Arial,ËÎÌו; word-break:break-all; }
+
+
+.menuskin {
+	BORDER: #666666 1px solid; VISIBILITY: hidden; FONT: 12px Verdana;
+	POSITION: absolute; BACKGROUND-COLOR:#F6F6F6;
+	background-image:url("menubg.gif");
+	text-align:left;
+	}
+.menuskin A {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 25px; COLOR: black; TEXT-DECORATION: none; behavior:url(inc/noline.htc);
+	}
+.menuskin a:hover {text-decoration:none }
+#mouseoverstyle {
+	BACKGROUND-COLOR: #C9D5E7; margin:2px; padding:0px; border:#597DB5 1px solid;
+	}
+#mouseoverstyle A {
+	COLOR: black
+}
+.menuitems{
+	margin:2px;padding:1px;word-break:keep-all;
+}
+.STYLE1 {color: #7777CC}
+.su1{vertical-align:bottom;background-color: #D3EBFE;  text-align: center;text-decoration: none}
+.su0{vertical-align:bottom;background-color: #0882E9; color: #FFFFFF; font-weight: bold;text-align: center;text-decoration: none}
