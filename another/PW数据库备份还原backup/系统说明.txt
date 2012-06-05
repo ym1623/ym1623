@@ -1,0 +1,2 @@
+备份还原
+bak\data\sql_config.php 在这个文件中配置你的数据库

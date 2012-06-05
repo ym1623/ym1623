@@ -1,0 +1,217 @@
+<!--<?php
+ 
+print <<<EOT
+-->
+<html>
+<head>
+<title>{$db_bbsname}- powered by phpwind.net</title>
+<meta http-equiv="Content-Type" content="text/html; charset=$db_charset">
+<style type="text/css">
+table { BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 2px}
+select {
+	FONT-SIZE: 12px;
+	COLOR: #000000; background-color: #E0E2F1;
+}
+a { TEXT-DECORATION: none; color:#000000}
+a:hover{ text-decoration: underline;}
+body {font-family:Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #F7F7F7;}
+textarea,input,object{font-size: 12px;}
+td { BORDER-RIGHT: 1px; BORDER-TOP: 0px; FONT-SIZE: 12px; COLOR: #000000;}
+.b{background:#F7F7F7;}
+.left_over{background:#F0F0F0;}
+.head { color: #ffffff;background: #739ACE;font-weight:bold;}
+.head td{color: #ffffff;}
+.head a{color: #ffffff;}
+.head_2 {background: #CED4E8;}
+.head_2 td{color: #000000;}
+.hr  {border-top: 1px solid #739ACE; border-bottom: 0; border-left: 0; border-right: 0; }
+.bold {font-weight:bold;}
+.smalltxt {font-family: Tahoma, Verdana; font-size: 12px;color: #000000;}
+.i_table{border: 1px solid #739ACE;background:#DEE3EF;}
+</style>
+<script language="JavaScript">
+ifcheck = true;
+function CheckAll(form)
+{
+	for (var i=0;i<form.elements.length-2;i++)
+	{
+		var e = form.elements[i];
+		e.checked = ifcheck;
+	}
+	ifcheck = ifcheck == true ? false : true;
+}
+function atccheck()
+{
+	if(document.FORM.atc_title.value==''){
+		alert('标题为空');
+		document.FORM.atc_title.focus();
+		return false;
+	} else if(document.FORM.fid.value==''){
+		alert('没有选择文章所属分类');
+		document.FORM.fid.focus();
+		return false;
+	}
+	_submit();
+}
+function checkhackset(chars)
+{
+	if(!confirm("确定要卸载此插件吗? 如果您卸载了此插件,程序将自动删除插件相关文件，请确认!"))
+		return false;
+	location.href=chars;
+}
+function checkgroupset(chars)
+{
+	if(!confirm("确定删除吗? 如果您删除了此用户组,请到论坛缓存数据管理更新用户头衔缓冲!"))
+		return false;
+	location.href=chars;
+}
+function report_jump(admin_file){
+	var URL=document.form1.type.options[document.form1.type.selectedIndex].value;
+	location.href=admin_file+"?adminjob=report&type="+URL;
+}
+function level_jump(admin_file)
+{
+	var URL=document.mod.selectfid.options[document.mod.selectfid.selectedIndex].value;
+	location.href=admin_file+"?adminjob=level&action=editgroup&gid="+URL;
+}
+function ip_jump(name)
+{
+	URL = eval('document.form1.' + name + '.options[document.form1.' + name + '.selectedIndex].value');
+	location.href=URL;
+}
+</script>
+</head>
+<body topmargin=5 leftmargin=5>
+
+<table width=98% align=center cellspacing=1 cellpadding=3 class=i_table>
+  <tr>
+    <td class=head colspan=2><b>操作菜单</b></td>
+  </tr>
+  <tr>
+    <td height="25" valign="middle" class=b> <a href="bak.php?a_type=bakout" target="_self">备份数据</a>  <a href="bak.php?a_type=bakin" target="_self">还原数据</a> </td>
+  </tr>
+</table>
+<br>
+
+<table width=98% align=center cellspacing=1 cellpadding=3 class=i_table>
+<tr><td class=head colspan=2><b>提示信息</b></td></tr>
+<tr><td class=b><br>
+<ul>
+<!--
+EOT;
+if($a_type=='bakout'){
+ print <<<EOT
+-->
+您可以根据自己的需要选择需要备份的数据库表,导出的数据文件可用"数据恢复"功能。<br><br>为了数据安全,备份文件采用时间戳命名保存,如果备份数据超过设定的大小程序会自动采用分卷备份功能，请耐心等待直到程序提示全部备份完成。<br><br>附件的备份只需手工转移附件目录和文件即可,风格备份也同! PhpWind不提供单独备份。
+<!--
+EOT;
+}elseif($a_type=='bakin'){
+ print <<<EOT
+-->
+本功能在恢复备份数据的同时,将覆盖原有数据,请确定是否需要恢复,以免造成数据损失。<br><br>数据恢复功能只能恢复由当前版本导出的数据文件,其他软件导出格式可能无法识别。<br><br>如果一个备份文件有多个分卷，您只需任选一个备份文件导入，程序会自动导入其他分卷
+<!--
+EOT;
+}print <<<EOT
+-->
+</ul>
+</td></tr></table><br>
+<!--
+EOT;
+if($a_type=='bakout'){
+ print <<<EOT
+-->
+ 
+
+<form action="$basename" method=post>
+<input type=hidden name="action" value="bakout">
+<table width=70% align=center cellspacing=1 cellpadding=3 class=i_table>
+<tr><td class=head colspan=3>数据库表</td></tr>
+<tr>
+<td class=head_2 width="5%" align=center>ID</td>
+<td class=head_2>数据库表</td>
+<td class=head_2 width="10%" align=center>选择</td>
+</tr>
+<!--
+EOT;
+$id=0;
+foreach($othortable as $key=>$table){
+$id++;
+print <<<EOT
+-->
+<tr>
+<td class=b align=center>$id</td>
+<td class=b>$table</td>
+<td class=b align=center><input type=checkbox name=tabledb[] value=$table></td>
+</tr>
+<!--
+EOT;
+}print <<<EOT
+-->
+<tr><td class=head colspan=3><b>分卷备份</b></td></tr>
+<tr class=b><td colspan=3><input type=text name="sizelimit" value="2048" size=5> 每个分卷文件长度</td></tr>
+</table>
+<br><center>
+<input type="button" name="chkall" value="全 选" onClick="CheckAll(this.form)">
+<input type=submit value="提 交"></center></form>
+<!--
+EOT;
+}elseif($a_type=='bakin'){
+if(!$action){print <<<EOT
+-->
+<form method="post" action="$basename">
+<table width=98% align=center cellspacing=1 cellpadding=3 class=i_table>
+<tr class=i_table align=center><td colspan=7 class=head><b>论坛备份文件</b></td></tr>
+<tr class=head_2 align=center><td width=3%>ID</td>
+<td width=35%>文件名</td><td width=15%>版本</td>
+<td>备份时间</td><td width=5%>卷号</td><td>导入</td><td width=5% >删</td></tr>
+<!--
+EOT;
+foreach($filedb as $id=>$bakfile){
+$id++;
+print <<<EOT
+-->
+<tr class=b align=center>
+<td>$id</td>
+<td><a href="data/$bakfile[name]">$bakfile[name]</a></td>
+<td>$bakfile[version]</td>
+<td>$bakfile[time]</td><td>$bakfile[num]</td>
+<td><a href="$basename&action=bakincheck&pre=$bakfile[pre]">导入</a></td>
+<td><input name="delfile[]" type=checkbox value="$bakfile[name]"></td></tr>
+<!--
+EOT;
+}print <<<EOT
+-->
+</table><br>
+<input name=action type=hidden value="del">
+<br><center>
+<input type="button" name="chkall" value="全 选" onClick="CheckAll(this.form)">
+<input type="submit" name="delete" value="删除备份" onClick="return checkset('此功能不可恢复,您确认要删除选中的备份文件！');"></center>
+</form>
+<script language=JavaScript>
+function checkset(confirm_info)
+{
+	if(confirm(confirm_info)){
+		return true;
+	} else {
+		return false;
+	}
+}
+</script>
+<!--
+EOT;
+}elseif($action=='bakincheck'){
+print <<<EOT
+-->
+<form action="$basename&action=bakin&pre=$pre" method="post">
+<table width="98%" align=center cellspacing=1 cellpadding=3 class=i_table>
+<tr><td class=head colspan=2><b>提示信息</b></td></tr>
+<tr><td class=b><br>
+<font color="blue">备份恢复功能将覆盖原来的数据,您确认要导入备份数据！</font> 
+<br><br></td><td class=b align=center><br><input type=submit value="确认导入备份"><br><br></td></tr></table><br>
+<br><br>
+<center> <input type='button' value='返 回 继 续 操 作' onclick='javascript:history.go(-1);'></center><br>
+</form>
+<!--
+EOT;
+}}include_once PrintEot('adminbottom');
+?>-->
