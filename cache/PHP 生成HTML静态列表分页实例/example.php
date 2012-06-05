@@ -1,0 +1,130 @@
+<?
+ /*
+ * @Download: http://www.codefans.net
+ * @version 1.0
+ * @copyright 2005-2009
+ * @package 静态分页生成
+*/
+ 
+
+	include_once "config.inc.php";
+	//包含配置文件
+	$progbar=new CProgbar("测试");
+	// 新建一个进度条类 
+	if($_GET['op']=="progbar")
+	{   
+		/* 当网页传过来的"$op"的值等于"progbar",执行生成静态文件 */
+		$Host     = "localhost";
+		//数据库连接地址
+	    $User     = "root";
+	    //数据库用户名
+	    $Password = "123";
+	    //数据库密码
+	    $Database = "tests";
+	    //数据库名
+	    $connect=mysql_connect($Host,$User,$Password) or die('无法连接服务器！');
+	    //请根据自己的情况配置
+	    $select=mysql_select_db($Database,$connect);
+	    //选择数据库   
+	    $db_sql = "SELECT title FROM test ORDER BY title";
+	    //自己行定义搜索的条件
+	    $result = mysql_query($db_sql);
+	    $total = mysql_num_rows($result);
+	    //总条数
+	    $pagesize = 5;
+	    //每页显示的条数
+	    $totalpage = ceil($total/$pagesize);
+	    //总页数
+	    $bar_mun = 5;
+	    //数字导航的长度 
+	    $style = 1;
+	    //输出分页的样式 
+		set_time_limit(0);
+		//php执行超时,0表示永远都否	
+		$progbar->init($total,"_parent");
+		//在iframe中显示
+		for($i=1;$i<=$totalpage;$i++)
+		{
+			/* 循环输出的页数 */
+			$this_page = $i;
+			//当前页
+			$page = new wind_page($db_sql, $pagesize, $bar_mun, $style,$this_page);
+			//定义新类 参数：($db_sql, $pagesize, $bar_mun, $style,$this_page)
+			while ($rs = mysql_fetch_array($page->result)) 
+			{
+				/* 循环要输出的列表 */
+				$arr_list[] = $rs["title"]."<br>";   
+			}
+			$first_record = $arr_list[0];
+			//最后一页最开始的一个记录
+			for($j=$pagesize-1;$j>=0;$j--)
+			{   
+				/* 把原列表按倒序输出 */
+				$list.= $arr_list[$j];
+			}
+			$var_page = $page->style();
+			//输出导航条
+			$name = "template_c/index_".sprintf("%02d",$i).".html";
+			  //输出页面路径与名称		
+			$template = "template/template.html";
+			  //替换的模版
+			$daytype = array
+			(  
+			    /* 替换的模版标记和变量值。
+			    *  例子中模版包含{1}、{2},详细查看template/template.html 
+			    */
+			    1 => $list,
+			    2 => $var_page
+			);
+			//详细
+			$htm = new create_html($name, $template, $daytype);
+			  //生成html
+			$list = "";
+			//清空
+			unset($arr_list);
+			//清空
+			$progbar->step();
+		}    
+		$progbar->full();
+		$progbar->text("全部生成完毕");
+		//可自行定义完成后所提示的信息
+	}
+		
+?>
+
+<HTML>
+<HEAD>
+<TITLE>CProgBar Iframe Example CodeFans.net</TITLE>
+<STYLE>
+BODY,P,TD,DIV,SPAN
+{
+	font-family:"宋体";
+	font-size:9pt;
+}
+</STYLE>
+<script>
+function run_progbar()
+{
+	document.frames['ProgbarCtrl'].location.href='example.php?op=progbar';
+}
+</script>
+<!--
+   ┏━━━━━━━━━━━━━━━━━━━━━┓
+   ┃             源 码 爱 好 者               ┃
+   ┣━━━━━━━━━━━━━━━━━━━━━┫
+   ┃                                          ┃
+   ┃           提供源码发布与下载             ┃
+   ┃                                          ┃
+   ┃        http://www.codefans.net           ┃
+   ┃                                          ┃
+   ┃            互助、分享、提高              ┃
+   ┗━━━━━━━━━━━━━━━━━━━━━┛
+-->
+</HEAD>
+		
+<BODY>
+<p><b>静态分页生成系统</b><br><?php echo $progbar->show();?><p>
+<input onclick='run_progbar()' class='button' type='button' value='运行'>
+<iframe style='display:none' name='ProgbarCtrl' width=100% height=100></iframe>
+</BODY>
+</HTML>
