@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharpsms", "csharpsms\csharpsms.csproj", "{F51C0AF8-1A1D-4F8B-9C0A-D3F4441294FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F51C0AF8-1A1D-4F8B-9C0A-D3F4441294FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F51C0AF8-1A1D-4F8B-9C0A-D3F4441294FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F51C0AF8-1A1D-4F8B-9C0A-D3F4441294FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F51C0AF8-1A1D-4F8B-9C0A-D3F4441294FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

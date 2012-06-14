@@ -1,0 +1,12 @@
+bin\Debug\sendsms.exe
+bin\Debug\sendsms.pdb
+bin\Debug\sendsms.xml
+bin\Debug\Interop.xssmsmms.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.xssmsmms.dll
+obj\Debug\sendsms.vbproj.ResolveComReference.cache
+obj\Debug\sendsms.Resources.resources
+obj\Debug\sendsms.vbproj.GenerateResource.Cache
+obj\Debug\sendsms.exe
+obj\Debug\sendsms.xml
+obj\Debug\sendsms.pdb

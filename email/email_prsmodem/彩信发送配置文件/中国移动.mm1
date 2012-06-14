@@ -1,0 +1,6 @@
+[Provider]
+ProviderMMSC=http://mmsc.monternet.com
+ProviderWAPGateway=10.0.0.172
+ProviderAPN=cmwap
+ProviderAPNAccount=
+ProviderAPNPassword=

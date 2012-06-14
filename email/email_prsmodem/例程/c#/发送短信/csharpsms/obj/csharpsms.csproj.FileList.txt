@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.xssmsmms.dll
+obj\Debug\csharpsms.csproj.ResolveComReference.cache
+bin\Debug\csharpsms.exe
+bin\Debug\csharpsms.pdb
+bin\Debug\Interop.xssmsmms.dll
+obj\Debug\csharpsms.exe
+obj\Debug\csharpsms.pdb
