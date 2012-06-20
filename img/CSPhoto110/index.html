@@ -1,0 +1,148 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh_cn" lang="zh_cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSPhoto图片查看器演示</title>
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="AC_RunActiveContent.js" language="javascript"></script><!--FLASH自己生成的JS-->
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style></head>
+<body bgcolor="#ffffff">
+<!--影片中使用的 URL-->
+<!--影片中使用的文本-->
+<!-- saved from url=(0013)about:internet -->
+<script language="javascript">
+/*------------------------Flash 调用代码---------------------------*/
+	if (AC_FL_RunContent == 0) {
+		alert("此页需要 AC_RunActiveContent.js");
+	} else {
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+			'width', '100%',
+			'height', '100%',
+			'src', 'csphoto',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'middle',
+			'play', 'true',
+			'loop', 'true',
+			'scale', 'noscale',
+			'wmode', 'window',
+			'devicefont', 'false',
+			'id', 'indexflash',
+			'bgcolor', '#ffffff',
+			'name', 'indexflash',
+			'menu', 'true',
+			'allowFullScreen', 'true',
+			'allowScriptAccess','sameDomain',
+			'movie', 'csphoto',
+			'salign', ''
+			); //end AC code
+	}
+/*------------------------Flash 调用代码结束---------------------------*/
+	function challs_flash_photo_configure(){ //组件必备函数
+		var a={};
+		
+		a.menuXML="menuData.xml"; 
+		//分类目录XML数据，文件地址设置，此设置将使 URLXML属性 失效
+		
+		a.URLXML="date.xml"; 
+		//没有分类目录时设置，图片XML数据，文件地址设置
+		
+		a.logoImg="logo.png"; 
+		//左上角显示的LOGO图片，高度默认33像素
+		
+		a.rightHTML="<p align=\"right\"><a href=\"http://www.access2008.cn/\" target=\"_blank\"><font color=\"#ffffff\">技术支持：challs 工作室</font></a></p>";
+		//右上角显示的文本，支持简单的HTML代码，不支持样式属性
+		
+		a.TopSwitch = true;
+		//顶部信息条，是否显示
+		
+		a.bigPhotoButtonList=[1,2,3,4,5,6]; 
+		//大图功能按钮设置，数组模式
+		//1 = 放大按钮
+		//2 = 缩小按钮
+		//3 = 还原按钮
+		//4 = 前一张按钮
+		//5 = 后一张按钮
+		//6 = 下载保存按钮
+		//注：数组可以任意顺序填写按钮数值，以按照自己的方式排列
+		
+		return a;
+	}
+	function challs_flash_photo_style(){ //组件样式设置函数 ，如果使用默认样式，可以删除此函数
+		var a={};
+		
+		//头顶栏样式设置
+		a.Top_height=33;                                   	//高度
+		a.Top_backgroundColor=['#333333','#222222'];       	//颜色设置，数组类型，2个颜色之间过度
+		a.Top_hatchingColor='#000000';					   	//阴影的颜色
+		
+		//分类菜单样式设置
+		a.menu_height=25;									//每条菜单框的高度
+		a.menu_width=150;									//菜单的宽度
+		a.menu_color = '#000000';							//菜单的颜色
+		a.menu_fontColor = '#ffffff';						//菜单字体颜色
+		a.menu_hatchingColor='#000000';						//菜单阴影颜色
+		
+		//小图框样式设置
+		a.smallPhoto_backgroundColor='#ffffff';            	//背景色
+		a.smallPhoto_borderColor='#333333';                	//边框色
+		a.smallPhoto_borderWidth=4;                        	//边框宽度
+		a.smallPhoto_angle=9;                              	//圆角弧度
+		a.smallPhoto_MouseOverColor='#00ff00';             	//鼠标触发边框颜色
+		a.smallPhoto_height=100;                           	//高度
+		a.smallPhoto_width=120;                            	//宽度
+		a.smallPhoto_hatchingColor='#000000';				//阴影的颜色
+		
+		//小图控制按钮样式设置
+		a.button_height=100;                               	//高度
+		a.button_width=60;                                 	//宽度
+		a.button_borderWidth=4;                            	//边框宽度
+		a.button_overColor='#333333';                      	//鼠标移上去时的颜色
+		a.button_outColor='#ffffff';                       	//鼠标离开时的颜色
+		a.button_hatchingColor='#000000';					//阴影的颜色
+		
+		//图片全屏时功能按钮样式设置
+		a.buttonTools_height=36;                           	//高度
+		a.buttonTools_width=80;                            	//宽度
+		a.buttonTools_overColor='#666666';					//鼠标移上去时的颜色
+		a.buttonTools_outColor='#333333';					//鼠标离开时的颜色
+		a.buttonTools_color='#ffffff';						//标识的颜色
+		a.buttonTools_hatchingColor='#000000';				//阴影的颜色
+		
+		//图片全屏时右上角关闭按钮样式设置
+		a.buttonClose_radii =70;							//半径
+		a.buttonClose_overColor='#666666';					//鼠标移上去时的颜色
+		a.buttonClose_outColor='#333333';					//鼠标离开时的颜色
+		a.buttonClose_color='#ffffff';						//标识的颜色
+		a.buttonClose_color='#000000';						//阴影的颜色
+		
+		//图片全屏百分比样式设置
+		a.bigInfo_color='#ffffff';							//字的颜色
+		a.bigInfo_backgroundColor='#333333';				//背景色
+		
+		//全屏按钮颜色
+		a.buttonFull_outColor='#333333';					//正常颜色
+		a.buttonFull_overColor='#000000';					//鼠标移动上去时的颜色
+		
+		//其他设定
+		a.shroudColor='#000000';							//遮罩的颜色
+		a.shroudAlpha=0.5;									//遮罩的透明度
+		
+		//滚动条
+		a.scrollBar_backgroundColor = '#333333';			//滚动条背景色
+		a.scrollBar_color = '#000000';						//滚动条前景色
+		
+		return a;
+	}
+</script>
+</body>
+</html>

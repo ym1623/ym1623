@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<i name="美女图片">
+	<i name="美女图一" data="date1.xml"></i>
+	<i name="美女图二" data="date2.xml"></i>
+	<i name="美女图三" data="date3.xml"></i>
+	<i name="美女图四" data="date4.xml"></i>
+</i>
+<i name="其他图片" data="date.xml" defalut="true"></i>
+</data>
