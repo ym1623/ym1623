@@ -1,0 +1,188 @@
+多文件上传组件
+
+temp.html 上传列表模式调用实例
+
+temp2.html 上传缩略图模式调用实例
+
+tempForm.html 用来测试服务器端代码表单，测试服务器代码错误专用
+
+update.swf 上传FLASH文件
+
+update.asp  接收示例 ASP版
+
+界面编辑器
+
+http://www.access2008.cn/update/tempSelectColor.html
+
+详情访问
+
+http://www.access2008.cn/update/
+
+--------------------
+     历史更新
+--------------------
+CFUpdate组件 1.1.9 版 
+
+1.修改了提示框样式
+2.修改了上传文件时，禁用按钮样式
+3.增加了challs_flash_onSelectFile JS函数事件，在用户选择文件完毕触发事件，参数 a 数值类型，返回等待上传文件数量
+4.更新了PHP范例代码（感谢网友：咪咪鼠标）
+5.更新了challs_flash_FormData JS函数，修正了无法获取多选列表框值（感谢网友：雪中狐） 
+
+
+
+1.1.8 bate 版
+
+增加了a.adjustOrder 属性，可以设置是否可以拖动条目，手动排序列表
+
+增加了a.deleteAllShow 属性，可以设置是否显示清空按钮，可以清空列表
+
+增加了challs_flash_deleteAllFiles() JAVASCRIPT函数，主要是清空按钮点击时，出发事件，根据返回值来确定是否清空列表
+
+修改challs_flash_FormData(a) JAVASCRIPT函数，解决了获取表单多个NAME项相同的checkbox的值的问题 
+
+在列表中增加了滚动条显示，以方面用户确定条目位置
+
+修正了在上传数量多，而且上传快时，条目移动位置错误的BUG（感谢网友：Supoor）
+
+修正了界面渲染和位置不正确的BUG
+
+
+
+1.1.6 bate 版
+
+增加了a.TitleSwitch 属性，可以设置是否显示，组件头部标题栏
+
+增加了a.ForceFileNum属性，可以设置强制条目数量，已上传和待上传条目相加等于为设置的值（不包括上传失败的条目），否则不让上传
+
+增加了a.autoUpload属性，可以用户选择文件后，直接开始上传，无需点击上传
+
+修复了，已上传文件统计数
+
+修复了，图片浏览模式下，上传报错后，无法删除条目的BUG
+
+
+1.1.5 bate 版
+
+1.添加属性a.ListShowType，可以使组件以文件列表，或缩略图方式显示，详细设置请看范例代码
+2.添加属性a.InfoDownRight，右下角统计信息的文本设置，解决在组件宽度很窄的时候，右下角统计信息显示不全的BUG
+
+
+
+1.1.4 bate 版
+
+在JS事件函数challs_flash_onStart(a)增加了返回值，当返回值为FALSE时，上传组件将停止上传
+
+增加challs_flash_style()函数，此函数用来设置组件颜色样式，详情请查看下载包的TEMP.HTML文件
+
+修正了a.CompleteClose设置BUG，解决了设置为true时，未上传的也无法取消的错误
+
+经过优化，减小了组件文件大小
+
+
+1.1.3 bate 版
+
+添加了a.MD5File 参数，可以使组件计算文件MD5签名，具体设置请详细查看注解
+添加了a.loadFileOrder 参数，可以调整选择文件在列表中的加载顺序
+添加了a.mixFileNum 参数，可以设置最少选择文件数量，再开始上传
+
+1.1.2 bate 版
+
+修正组件在初始化时兼容性问题（感谢网友：呼呼小睡）
+
+添加了a.autoClose参数，上传完成条目，将自动删除已完成的条目，值为延迟时间，以秒为单位，当值为 -1 时不会自动关闭，注意：当参数a.CompleteClose为false时无效
+
+修正了，在没有选择文件时也可以点击上传的错误，现在会有提示信息
+
+1.1.1 bate 版
+
+修正了右下角统计不能正常显示的BUG
+
+修正了点击取消后，按钮不能正常显示
+
+修正了初始化函数challs_flash_update 中 a.CompleteClose 无效的BUG
+
+1.1.0 bate 版
+
+可以随意调整组件大小，注意调用FLASH代码不要设置scale参数
+
+JS初始化函数challs_flash_update 中，增加了a.title属性来指定组件头部名称
+
+增加JS函数challs_flash_onError ，反馈每个文件的上传错误
+
+修改了JS函数challs_flash_FormData ，可以正确的获取FORM表单的 checkbox ，radio类型的值
+
+修正了JS初始化函数challs_flash_update 中 a.returnServer设置的BUG
+
+增加了部分缓动特效
+
+修正其它小错误
+
+1.0.9 bate 版
+
+半透明弹出提示层增加关闭按钮
+
+修正了所有上传完成后，返回失败数量错误的BUG
+
+修正了在最后一页取消条目时，页面不会自动往上翻的BUG
+
+以上修正感谢（网友：大宇）的测试和意见
+
+取消了文件上传必须小于100M的内部代码限定，大家可以根据自己的需求设定，不过需要大家自己测试最稳定的值，这个和FLASH播放器有关，请大家自己测试支持的最大上传的文件大小！
+
+1.0.8 bate 版
+
+添加了a.repeatFile 属性设置，可以控制是否过滤重复选择文件
+
+添加了a.returnServer 属性设置，是否等待服务器放回值
+
+文件列表增加了鼠标滚轴翻动支持
+
+修正了部分BUG
+
+1.0.7 bate 版
+
+修正了所有文件上传完成后触发事件会在最后一个文件返回信息前触发的BUG
+
+在所有文件上传完毕出发事件，JAVASCRIPT函数challs_flash_onCompleteData 里面添加一个返回参数，记录了此次上传失败的数量
+
+1.0.6 bate 版
+
+添加了可以删除已上传完成条目参数设置 CompleteClose 
+添加了FormID 参数设置，每次上传时将注册了ID的表单数据以POST形式发送到服务器
+
+1.0.5 bate 版
+
+修正了自动滚动显示正在上传的文件列表
+
+在组件右下角增加了上传文件总数信息
+
+1.0.4 bate 版
+
+添加了对等待上传文件最大个数控制，参数为 fileNum 
+
+添加了上传数据总量控制，参数为 UpSize，本地判断用户可传输的流量，最大限度的节省了服务器流量浪费
+
+1.0.3 bate 版
+
+添加了每个文件开始上传时触发事件，调用JAVASCRIPT函数challs_flash_onStart() 函数
+
+添加了列表中所有文件上传完成时触发事件，调用JAVASCRIPT函数challs_flash_onCompleteAll() 函数
+
+challs_flash_onStart()和challs_flash_onComplete()事件，返回值添加了一个fileType属性，文件类型
+
+1.0.2 bate 版
+
+添加了服务器反馈信息事件，可以接收每次上传文件后，服务器返回的文本信息，调用JAVASCRIPT函数 challs_flash_onCompleteData()
+
+添加了Form表单文本域Name属性的设置
+
+修正了若干BUG
+
+1.0.1 bate 版
+
+添加了每个文件上传完成时，调用JAVASCRIPT函数 challs_flash_onComplete() 函数
+
+更新了错误处理系统
+
+修正了部分BUG
