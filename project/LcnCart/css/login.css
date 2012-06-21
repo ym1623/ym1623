@@ -1,0 +1,93 @@
+/*lo_corner*/
+.lo_corner_t{height:5px;background:url(../images/Login_bg_03.jpg) #fff repeat-x left -5px;overflow:hidden;}
+.lo_corner_tl{width:5px;height:5px;background:url(../images/Login_bg_03.jpg) no-repeat left 0px;float:left;}
+.lo_corner_tr{width:5px;height:5px;background:url(../images/Login_bg_03.jpg) no-repeat right -10px;float:right;}
+.lo_corner_c{border:solid #E4E4E4;border-width:0 1px;background:url(../images/Login_bg_11.jpg) #fff repeat-x left top;padding-top:10px;}
+.lo_corner_b{height:5px;background:url(../images/Login_bg_03.jpg) #fff repeat-x left -20px;overflow:hidden;}
+.lo_corner_bl{width:5px;height:5px;background:url(../images/Login_bg_03.jpg) no-repeat left -15px;float:left;}
+.lo_corner_br{width:5px;height:5px;background:url(../images/Login_bg_03.jpg) no-repeat right -25px;float:right;}
+/*mleft*/
+.mleft{width:485px;overflow:hidden;float:left;}
+/*mright*/
+.mright{width:485px;overflow:hidden;float:right;}
+/*h2*/
+.lo_corner_c h2{color:#fff;width:465px;height:30px;margin:0 auto 30px;line-height:27px;}
+.lo_corner_c h2 em{font-size:12px;font-weight:normal;padding-left:30px;}
+.lo_corner_c h2 a:link,.lo_corner_c h2 a:visited{font-size:12px;color:#fff;font-weight:normal;text-decoration:underline;}
+h2.logon{height:30px;background:url(../images/Login_bg_15.jpg) repeat-x left -30px;overflow:hidden;}
+h2.logon .lo_h2_left{width:8px;height:30px;background:url(../images/Login_bg_15.jpg) no-repeat left 0px;float:left;}
+h2.logon .lo_h2_right{width:8px;height:30px;background:url(../images/Login_bg_15.jpg) no-repeat left -60px;float:right;}
+h2.login{height:30px;background:url(../images/Login_bg_15.jpg) repeat-x left -120px;overflow:hidden;}
+h2.login .lo_h2_left{width:8px;height:30px;background:url(../images/Login_bg_15.jpg) no-repeat left -90px;float:left;}
+h2.login .lo_h2_right{width:8px;height:30px;background:url(../images/Login_bg_15.jpg) no-repeat left -150px;float:right;}
+/*lo_child*/
+.lo_child{width:373px;height:45px;padding:0 55px;overflow:hidden;}
+.lo_child strong{font-size:14px;color:#FD9D00;}
+.lo_line{height:20px;border-top:1px dotted #e4e4e4;width:900px;margin:0 auto;}
+#qyhyzc .lo_child{width:auto;}
+#xyyhzc .lo_child{padding:0;}
+	/*input*/
+.lo_child input{border:1px solid #ccc;height:20px;line-height:20px;width:190px;}
+.lo_child input.input2{width:330px;}
+.lo_child input.radio{border:0;width:auto;height:auto;}
+.lo_child label,.lo_child a.grey:link,.lo_child a.grey:visited{color:#999;padding-left:10px;}
+	/*yzm*/
+	.yzm{height:80px;margin-bottom:10px;}
+	.yzm_img{padding:2px 0 0 84px;}
+	.yzm_img img{float:left;margin-right:8px;}
+/*lo_submit*/
+.lo_submit{height:65px;text-align:center;}
+.lo_submit img,.lo_submit input,.lo_submit2 img,.lo_submit2 input{margin:0 auto;}
+.lo_submit2{height:65px;text-align:center;}
+.lo_submit3{height:50px;}
+/*regist*/
+#regist{width:960px;}
+/*reguser*/
+.reguser_child{height:500px;margin:0 80px 20px;padding:20px;border:1px solid #ccc;overflow:auto;*height:515px;}
+.reguser_child h5{margin-top:3px;margin-bottom:3px}
+.reguser_child p{margin-top:3px;margin-bottom:3px;text-indent:1.6em;}
+.reguser_child ul{padding:0 1.8em}
+/*Retrieve_password*/
+.Retrieve_child{height:30px;padding:0 90px;color:red}
+/*zfb_qq*/
+.zfb_qq{width:357px;height:167px;padding:3px 0;background:url(../images/login_bg1.jpg) no-repeat;margin:0 auto;line-height:40px;font-weight:bold;color:#666;}
+.zfb_qq span{margin-top:7px;}
+.zfb{width:280px;height:40px;border-bottom:1px solid #ccc;margin:0 auto;}
+.qq,.xn{width:280px;height:40px;border-bottom:1px solid #ccc;margin:0 auto;}
+.ne{width:280px;height:40px;margin:0 auto;}
+/*comLogin---------------------------------------------------------------------------------------------*/
+.comLogin{width:978px;border:1px solid #E7CA96;background:url(../images/comLogin_bg.jpg) repeat-x top;overflow:hidden;}
+.comLogin h2{width:960px;margin:0 auto;background:url(../images/comLogin_bg1.jpg) repeat-x bottom;padding:15px 0 5px;}
+/*comLogin_item*/
+.comLogin_item{width:580px;padding-left:60px;float:left;font-size:14px;}
+.comLogin_item h3{margin-top:20px;}
+.comLogin_item ul{border-bottom:1px dashed #ccc;padding:20px 0;overflow:hidden;}
+.comLogin_item ul.ul1{border-bottom:1px solid #ADADAD;}
+.comLogin_item li{line-height:20px;padding:10px 0;overflow:hidden;zoom:1;}
+.comLogin_item li span{display:block;float:left;}
+.comLogin_item li input{float:left;height:20px;line-height:20px;width:190px;margin-right:10px;}
+.comLogin_item li select{float:left;margin-right:10px;}
+.comLogin_item li input.input2{width:330px;}
+.comLogin_item li input.radio{border:0;width:auto;height:auto;float:none;margin-right:0;}
+.comLogin_item li .comLoginTip{width:290px;}
+#nickname,#email{width:290px;}
+#name,#address{width:270px;}
+.comLogin_item label,.comLogin_item a.grey:link,.comLogin_item a.grey:visited{color:#999;padding-left:10px;}
+.comLogin_item .grey{color:#999;padding:5px 0 0 0px;}
+.comLogin_item .red,.comLogin_item a.red:link,.comLogin_item a.red:visited{color:#f00;}
+.comLogin_submit{padding:20px 12px;}
+/*newBox*/
+.newBox_wrap{float:right;padding:30px 40px 0 0;}
+.newBox{border:1px solid #DBD8D3;width:240px;overflow:hidden;line-height:0;font-size:0;}
+#xy{padding:0px 10px 0 0;}
+/*shoppingType*/
+#shoppingType input{float:none;border:0;width:auto;height:auto;margin-right:0;}
+/*pwdStrengh*/
+#pwdStrengh{width:110px;height:12px;line-height:12px;float:right;background-image:url(../images/ico_pwdStrengh.jpg);background-repeat:no-repeat;position:absolute;margin-top:-16px;margin-left:282px;*margin-left:5px;*margin-top:8px;*line-height:14px;display:none;}
+.strenghA{background-position:60px 0;}
+.strenghB{background-position:60px -18px;}
+.strenghC{background-position:60px -36px;}
+#pwdStrengh1{width:110px;font-size:12px;height:12px;line-height:12px;background-image:url(../images/ico_pwdStrengh.jpg);background-repeat:no-repeat;position:absolute;*line-height:14px;display:none;top:38px;left:85px;}
+/*lo_child_item&lo_child_bg*/
+.lo_child_item{display:block;padding:4px 0 0 6px;float:left;*padding:4px 0 0;white-space:nowrap;}
+.lo_child_bg{width:88px;height:22px;background:url(../images/bg_radioItems.jpg) no-repeat 0 0;}

@@ -1,0 +1,21 @@
+/*Sort_Link*/
+.Sort_Link{width:100%;background:url(../images/type_b_bg.gif) repeat-x;height:54px;margin-bottom:13px;overflow:hidden;}
+.Sort_Link span{height:54px;width:4px;display:block;}
+.Sort_Link span.Sort_Link_bgL{background:url(../images/type_b_bg.gif) no-repeat 0 -108px;float:left;}
+.Sort_Link span.Sort_Link_bgR{background:url(../images/type_b_bg.gif) no-repeat right -54px;float:right;}
+.Sort_Link a{background:url(../images/com/type_bg.jpg) no-repeat 0 0;width:99px;height:32px;line-height:32px;font-size:14px;font-weight:bold;display:block;float:left;text-align:center;margin-top:11px;margin-left:9px;color:#333;}
+/*.Sort_List*/
+.Sort_List{width:978px;border:1px solid #E7CA96;overflow:hidden;margin-bottom:8px;background:#F5FAFF;}
+.Sort_List h2{height:32px;position:relative;background:#FBF7EE;}
+.Sort_List h2 img{position:absolute;left:-1px;top:-1px;}
+.Sort_List dl{/*width:300px;height:115px;*/padding:10px 13px;overflow:hidden;/*float:left;*/background:#FBF7EE;border-top:1px dashed #F5EBD5;}
+.Sort_List dl.first{background:#FBF7EE;border-top:0;}
+.Sort_List dl.even{background:#fff;}
+/*.Sort_List dl.lastodd{background:#f5faff;}
+.Sort_List dl.lasteven{background:#fff;}*/
+#Sort_digital{}
+#Sort_computer{}
+#Sort_electronic{}
+.Sort_List dt{font-size:14px;font-weight:bold;color:#005aa0;}
+.Sort_List dd{width:98%;overflow:hidden;}
+.Sort_List a{font-size:14px;line-height:1.5em;margin-right:10px;white-space:nowrap;float:left;}

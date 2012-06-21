@@ -1,0 +1,61 @@
+#Position a:link,#Position a:visited{color:#222;}
+.Main a:link,.Main a:visited{color:#3366CC;}
+.Main a:hover,.Main a:active{color:#FF7403;}
+.left{width:165px;margin-right:10px;float:left;text-align:center;}
+.right{width:211px;float:right;}
+.right h2{width:195px;height:25px;line-height:25px;padding:2px 8px 0;background:url(../images/spring_08.gif) #E7CA96 no-repeat 0 0px;color:#D6290B;}
+.right ul{width:193px;padding:8px;border:solid #E7CA96;border-width:0 1px 1px;}
+.right li{height:20px;line-height:20px;overflow:hidden;}
+.middle{width:552px;padding:15px;line-height:1.5em;border:1px solid #E7CA96;float:left;}
+.right1{width:805px;line-height:1.5em;float:right;}
+/*-----------------------------left---------------------------------------*/
+.left h2{background:url(../images/title_user_bg.jpg) #CE2020 no-repeat;height:27px;line-height:27px;color:#fff;}
+.left .left_box1{border:solid #E7CA96;border-width:0 1px 1px;}
+.left h3{padding:0 10px;height:25px;line-height:25px;background:#FBF7EE;border-top:1px solid #f2dcb3;font-size:12px;}
+.left ul{padding:4px 0;text-align:left;}
+.left ul li{background:url(../images/my_icon.gif) no-repeat 50px 7px;height:18px;padding-left:60px;padding-top:2px;}
+/*-----------------------------right---------------------------------------*/
+/*Report*/
+#Report{overflow:hidden;margin-bottom:6px;}
+/*userhelp&&problem*/
+#userhelp{margin-bottom:6px;}
+/*-----------------------------middle---------------------------------------*/
+.Welcome{font-size:14px;font-weight:bold;padding-bottom:15px;background:url(../images/w_dot_3.gif) repeat-x 0 bottom;margin-bottom:10px;}
+.Welcome span{font-weight:normal;color:#666;font-size:12px;}
+	/*User_Info*/
+.User_Info{margin-bottom:20px;line-height:2em;}
+.User_Info td{background:url(../images/w_dot_3.gif) repeat-x 0 bottom;}
+.red{color:red;}
+.blue{color:blue;}
+.grey{color:#999;}
+	/*User_Tip*/
+.User_Tip{margin:0 auto 20px;border:1px solid #E7CA96;padding:10px;/*text-align:center;*/}
+.User_Tip a{font-weight:bold;}
+.User_Tip em{color:red;}
+	/*Tips*/
+.middle h3{height:25px;line-height:25px;margin-bottom:8px;}
+.middle h3 em{font-weight:normal;color:#994030;font-size:12px;}
+	.Tip_Buy{margin:0 auto 20px;}
+	.Tip_Buy th,.Tip_Buy td{padding:2px;text-align:center;}
+	.Tip_Buy th{background:#EBF4FB;}
+	.Tip_Buy tr.tr1 th{background:#FBF7EE;}
+/*fov*/
+#fov li{border:none;}
+#fov dl{background:none;}
+#fov dd.p_Price strong{color:#DA2B28;}
+/*EDM by LiuWenLei*/
+.f_313132{color:#313132}
+.sub_tit{margin-left:7px;margin-right:7px}
+.sub_email{font-size:14px;border-bottom:1px solid #e7eff6}
+.sub_email_a{border-top:1px solid #e7eff6}
+.sub_email_button{ background:url(../images/jd_email_03.gif) no-repeat;border:0;width:89px;height:26px}
+.sub_l7{padding-left:7px}
+.sub_box{padding:1px; background:#fff}
+.jd_new{background:url(../images/jd_email_07.gif) no-repeat 52px 2px;}
+.jd_up{background:url(../images/jd_up.gif) no-repeat 52px 2px;}
+.wdy{color:#7c7c7c}
+.list_new{ position:relative}
+.jd_hot{background:url(../images/jd_hot.gif) no-repeat 52px 2px;}
+/*newSkin--------------------------------------------------------*/
+.pD1{padding:5px 2px;line-height:24px;}
+.pD1 .h1{font-size:16px;}

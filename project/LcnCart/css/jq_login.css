@@ -1,0 +1,38 @@
+.onShow
+{
+    padding-left:85px; 
+	font-size: 12px;
+	line-height:20px; 
+	vertical-align:middle;
+	color:#999;
+}
+.onFocus
+{
+    padding-left:85px; 
+	font-size: 12px;
+	line-height:20px; 
+	vertical-align:middle;
+	color:#999;
+}
+.onError
+{
+    padding-left:85px;
+	font-size: 12px;
+	line-height:20px; 
+	vertical-align:middle;
+	color:#f00;
+}
+.onSuccess
+{
+    padding-left:85px;
+	font-size: 12px;
+	line-height:20px; 
+	vertical-align:middle;
+}
+.onLoad
+{
+    padding-left:85px;
+	font-size: 12px;
+	line-height:20px; 
+	vertical-align:middle;
+} 
