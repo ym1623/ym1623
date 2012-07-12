@@ -1,0 +1,19 @@
+                ╭═══════════════╮
+                ║                              ║
+  ╭══════┤       powered by 黄乐        ├══════╮
+  ║            ║                              ║            ║
+  ║            ╰═══════════════╯            ║
+　║                                                          ║
+　║使用说明：                                                ║
+  ║   1) 首先把代码上传到网站目录下                          ║
+  ║   2) 配置 config/config.php 文件                         ║
+  ║   3) 最后运行 export.php 进入操作页面                    ║
+  ║   4) 本源码只可供研究使用，切勿用于商业用途，            ║ 
+  ║  	  由此引起一切后果与本人无关。                        ║ 
+  ║                                                          ║
+  ║   若有任何疑问，请联系本人：QQ：385863089                ║
+  ║                                                          ║
+  ║                                                          ║
+  ║                                                          ║
+  ╰═════════════════════════════╯
+        
